@@ -6,3 +6,8 @@
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/oxinabox/Pretalx.jl?svg=true)](https://ci.appveyor.com/project/oxinabox/Pretalx-jl)
 [![Codecov](https://codecov.io/gh/oxinabox/Pretalx.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/oxinabox/Pretalx.jl)
 [![Build Status](https://api.cirrus-ci.com/github/oxinabox/Pretalx.jl.svg)](https://cirrus-ci.com/github/oxinabox/Pretalx.jl)
+
+
+
+Wrapper of the [Pretalx Web API](https://docs.pretalx.org/en/latest/api/).
+
