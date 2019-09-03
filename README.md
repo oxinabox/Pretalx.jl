@@ -1,4 +1,4 @@
-# Pretalx
+# Pretalx ![https://www.tidyverse.org/lifecycle/#experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://oxinabox.github.io/Pretalx.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://oxinabox.github.io/Pretalx.jl/dev)
