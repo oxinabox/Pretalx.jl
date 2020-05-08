@@ -1,13 +1,11 @@
 module Pretalx
-
 using HTTP
 using JSON2
 
-const pretalx_token = "Token fa4ea0f04cf13c4555ad6aa5bc5009b1b5fb1121e"
-const pretalx_base = "https://pretalx.com/api/events/juliacon2019/"
+export get_all_submissions
 
-function get_all_raw(endpoint; pretlax_base=pretalx_base, pretalx_token=pretalx_token)
-    endpoint = pretlax_base * endpoint
+function get_all_raw(endpoint; pretalx_base, pretalx_token)
+    endpoint = joinpath(pretalx_base, endpoint)
     results = Vector{NamedTuple}()
     while true
         # GOLDPLATE: This would be better done with asyncs
@@ -22,6 +20,8 @@ end
 
 get_all_submissions_raw(;kwargs...) = get_all_raw("submissions"; kwargs...)
 get_all_speakers_raw(;kwargs...) = get_all_raw("speakers"; kwargs...)
+get_all_reviews_raw(;kwargs...) = get_all_raw("reviews"; kwargs...)
+
 
 function get_all_submissions(
         allowed_state = state -> state == "confirmed" || state=="accepted" ;
